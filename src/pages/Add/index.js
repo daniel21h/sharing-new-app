@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {useNavigation} from '@react-navigation/native'
 
-import api from '../../services/api'
+import { api } from '../../services/api'
 
 import { Container, PageScroll, HeaderText, Label, Input, PublishButton, PublishButtonText } from './styles';
 

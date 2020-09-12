@@ -4,11 +4,7 @@ import { useNavigation, useRoute } from '@react-navigation/native';
 import * as Print from 'expo-print';
 import * as Sharing from 'expo-sharing';
 
-import html from '../../../index.html'
-
 import imageLogo from '../../assets/imagelogo/imagelogo.png';
-
-import { api } from '../../services/api'
 
 import { 
   Container, 
@@ -24,36 +20,12 @@ import {
   Subtitle,
   Description,
 } from './styles';
-import { color } from 'react-native-reanimated';
 
 export default function Details() {
   const { goBack } = useNavigation();
 
   const route = useRoute();
   const newPublish = route.params.item;
-
-  // editor
-  // font-style: italic;
-  // font-size: 12px;
-  // color: #C0C0C0;
-  
-  // editorname
-  // color: #FF7800;
-  
-  // title
-  //   font-size: 22px;
-  // font-weight: bold;
-  // color: #303B45;
-  // margin-top: 8px;
-  
-  // subtitle
-  //  font-size: 18px;
-  // color: #777777;
-  
-  // descripito
-  //   font-size: 14px;
-  // color: #444444;
-  // margin-top: 16px;
 
   // Create a PDF page with text and rectangles
   async function handlePdf() {
